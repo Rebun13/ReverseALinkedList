@@ -65,7 +65,7 @@ SinglyLinkedListNode* reverse(SinglyLinkedListNode* llist) {
     SinglyLinkedListNode* nextNode = currentNode->next;
     while(nextNode) {
         currentNode->next = previousNode; // re-link
-        previousNode == currentNode;
+        previousNode = currentNode;
         currentNode = nextNode;
         nextNode = currentNode->next;
     }
