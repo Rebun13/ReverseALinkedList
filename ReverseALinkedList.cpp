@@ -42,7 +42,7 @@ class SinglyLinkedList {
         }
 };
 
-void print_singly_linked_list(SinglyLinkedListNode* node, string sep, ofstream& fout) {
+void print_singly_linked_list(SinglyLinkedListNode* node, string sep) {
     while (node) {
         cout << node->data;
 
@@ -99,7 +99,7 @@ int main()
 
         SinglyLinkedListNode* llist1 = reverse(llist->head);
 
-        print_singly_linked_list(llist1, " ", fout);
+        print_singly_linked_list(llist1, " ");
         cout << "\n";
     }
 
